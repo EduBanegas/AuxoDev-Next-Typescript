@@ -1,0 +1,27 @@
+@import '@styles/mixins';
+
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background: rgba(0, 0, 0, 0.7);
+
+	@include viewGrid();
+	align-content: center;
+
+	animation-name: lazy;
+	animation-duration: 0.1s;
+}
+
+@keyframes lazy {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

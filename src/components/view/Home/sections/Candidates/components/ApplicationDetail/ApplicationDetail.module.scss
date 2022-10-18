@@ -1,0 +1,101 @@
+@import '@styles/mixins';
+
+.applicationDetail {
+	font-size: $--em-base-size;
+
+	position: relative;
+
+	grid-column: 2/-2;
+
+	height: 72vh;
+	max-height: 72vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	row-gap: 2em;
+
+	border-radius: 0.5em;
+	padding: 2em 1.5em;
+
+	background-color: #fff;
+
+	.closeIcon {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+
+		width: 5em;
+		height: 5em;
+
+		cursor: pointer;
+	}
+
+	.candidateData {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		p:first-child {
+			font: $--body-1;
+		}
+
+		p:last-child {
+			font: $--button-1;
+		}
+	}
+
+	// Subtitle
+	h1 {
+		font: $--subtitle-2;
+		color: $--text-color-3;
+	}
+
+	.answersList {
+		height: 100%;
+		max-height: 100%;
+
+		overflow-y: auto;
+	}
+
+	.message {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+// <<<<<< BREACKPOINTS >>>>>>>>
+// Mobile - BreakPoint
+@media screen and (min-width: 200px) and (max-width: 340px) {
+	.applicationDetail {
+		height: 88vh;
+		max-height: 88vh;
+	}
+}
+
+// Table - BreakPoint
+@media screen and (min-width: 600px) {
+	.applicationDetail {
+		height: 72vh;
+		max-height: 72vh;
+	}
+}
+
+// Desktop - Mobile BreakPoint
+@media screen and (min-width: 1024px) {
+	.applicationDetail {
+		grid-column: 3/-3;
+
+		height: 80vh;
+		max-height: 80vh;
+
+		padding: 2em 3em;
+	}
+}
+
+@media screen and (min-width: 1360px) {
+	.applicationDetail {
+		grid-column: 5/-5;
+	}
+}

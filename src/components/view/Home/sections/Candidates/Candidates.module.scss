@@ -1,0 +1,32 @@
+@import '@styles/mixins';
+@import '@styles/fonts';
+
+// Section
+.candidates {
+	font-size: $--em-base-size;
+
+	grid-column: 1/-1;
+	margin: 0 2em;
+
+	// Subtitle
+	h4 {
+		grid-column: 1/-1;
+		font: $--subtitle-2;
+		margin-bottom: 1em;
+	}
+}
+
+// <<<<<< BREACKPOINTS >>>>>>>>
+// Table - BreakPoint
+@media screen and (min-width: 600px) {
+	.candidates {
+		grid-column: 2/-2;
+	}
+}
+
+// Desktop - Mobile BreakPoint
+@media screen and (min-width: 1024px) {
+	.candidates {
+		grid-column: 4/-4;
+	}
+}

@@ -1,0 +1,106 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+// <<<<<< MIXINS FOR DESIGNING WITH GRID AND BASE SYSTEMS IN 8PT(8px = 1em) >>>>>>>>
+$--em-base-size: 8px;
+
+@mixin viewGrid {
+	font-size: $--em-base-size;
+
+	grid-column: 1/-1;
+
+	min-height: 100vh;
+
+	display: grid;
+	align-content: flex-start;
+
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 2em;
+	row-gap: 4em;
+}
+
+@mixin sectionGrid {
+	font-size: $--em-base-size;
+
+	grid-column: 1/-1;
+
+	display: grid;
+	align-content: flex-start;
+
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 2em;
+	row-gap: 3em;
+}
+
+@mixin containerGrid {
+	font-size: $--em-base-size;
+
+	grid-column: 1/-1;
+
+	display: grid;
+	align-content: flex-start;
+	justify-items: flex-start;
+
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+
+	column-gap: 1em;
+	row-gap: 2em;
+}
+
+@mixin wrapper {
+	font-size: $--em-base-size;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 4em 0;
+
+	height: 100%;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+
+@mixin input {
+	font-size: $--em-base-size;
+	font: $--body-1;
+
+	color: $--text-color-1;
+
+	width: 100%;
+	max-width: 100%;
+
+	height: 48px;
+
+	padding: 8px 16px;
+
+	border-radius: 4px;
+	border: 1px solid $--primary-color-5;
+
+	cursor: pointer;
+	outline: none;
+}
+
+@mixin button {
+	font-size: $--em-base-size;
+
+	background-color: $--primary-color-4;
+
+	min-height: 5em;
+
+	padding: 0px 3em;
+
+	border: none;
+	border-radius: 0.4em;
+
+	text-align: center;
+
+	p {
+		font: $--button-1;
+		color: #fff;
+	}
+
+	cursor: pointer;
+}

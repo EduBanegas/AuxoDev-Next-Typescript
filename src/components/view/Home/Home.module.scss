@@ -1,0 +1,12 @@
+@import '@styles/mixins.scss';
+
+.home {
+	@include viewGrid();
+}
+
+@media screen and (min-width: 1920px) {
+	.home {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+}

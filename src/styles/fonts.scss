@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 200;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-Thin.otf');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-Light.otf');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-Medium.otf');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-SemiBold.otf');
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Archia'), url('../assets/fonts/Poppins/Poppins-Bold.otf');
+}
+
+// Font sizes - Type scale 1.200 (Minor Third)(Base 16px)
+/* Headline */
+$--headline-1: normal 300 4.3rem/6.9569rem Poppins;
+$--headline-2: normal 300 3.583rem/5.7969rem Poppins;
+$--headline-3: normal 400 2.9863rem/4.8312rem Poppins;
+$--headline-4: normal 400 2.4881rem/4.0256rem Poppins;
+$--headline-5: normal 400 2.0737rem/3.355rem Poppins;
+$--headline-6: normal 500 1.7281rem/2.7956rem Poppins;
+
+/* Subtitle */
+$--subtitle-1: normal 500 1.44rem/2.3294rem Poppins;
+$--subtitle-2: normal 400 1.2rem/1.9412rem Poppins;
+
+/* Body */
+$--body-1: normal 400 1rem/1.618rem Poppins;
+$--body-2: normal 400 0.9375rem/1.5169rem Poppins;
+
+/* Button */
+$--button-1: normal 500 0.8331rem/1.3475rem Poppins;
+
+/* Caption */
+$--caption-1: normal 400 0.6944rem/1.1231rem Poppins;
+
+/* Overline */
+$--overline-1: normal 400 0.5787rem/0.9363rem Poppins;

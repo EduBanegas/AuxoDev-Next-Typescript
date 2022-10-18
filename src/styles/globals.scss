@@ -1,0 +1,45 @@
+@import './fonts.scss';
+@import './colors.scss';
+@import './reset.scss';
+@import './mixins.scss';
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-size: 100%;
+
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Poppins';
+
+	color: $--text-color-1;
+}
+
+// <<<<<< BREACKPOINTS >>>>>>>>
+// Mobile - BreakPoint
+@media screen and (min-width: 200px) and (max-width: 340px) {
+}
+
+// Table - BreakPoint
+@media screen and (min-width: 600px) {
+}
+
+// Desktop - Mobile BreakPoint
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1360px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
